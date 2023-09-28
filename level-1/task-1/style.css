@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.wrapper{
+    height:750px;
+    width:980px;
+    background-color: yellowgreen;
+    margin:0 auto;
+}
+/*header section start*/
+.header{
+    width:inherit;
+    height:150px;
+    background-color: rgb(152, 183, 94);
+}
+.logo{
+    width:100px;
+    height:100px;
+    margin:20px 0 20px 50px;
+    float: left;
+
+    
+}
+.companyname{
+    width:830px;
+    height:150px;
+    background-color: rgb(47,69,5);
+    float: left;
+}
+.cname{   
+    width:630px;
+    font-size: 40px;
+    color:yellow;
+    margin:25px 0 0 200px;
+}
+.caption{
+    width:600px;
+    margin:0 0 0 230px;
+    font-size: 40px;
+    color:yellow;
+
+}
+
+/*header section end*/
+/*nav section start*/
+.nav{
+    width:inherit;
+    height:50px;
+    background-color: rgb(68,83,39);
+    line-height: 50px;
+}
+.nav ul{
+    list-style-type: none;
+}
+.nav li{
+    display:inline;
+
+}
+.nav  a{
+    text-decoration: none;
+    border: solid 1px rgb(239, 239, 11);
+    padding:15px 70px;
+    background-color: yellow;
+    transition: all 3s;
+}
+.nav a:hover{
+    background-color: rgb(9, 93, 93);
+    text-decoration: underline;
+    color:rgb(95, 17, 58);
+}
+
+/*nav section end*/
+/*content sectionn start*/
+.content{
+    width:inherit;
+    height:500px;
+    background-color: rgb(65,95,4);
+}
+
+/*content section end*/
+.footer{
+    width:inherit;
+    height:50px;
+    background-color: rgb(152,183,94);
+}
+.top-content{
+    width:930px;
+    height:235px;
+    background-color: gray;
+    margin:10px 25px;
+    float:left;
+}
+.top-content-img1,.top-content-img2{
+    width:465px;
+    height:235px;
+    float: left;
+}
+.bot-content{
+    width:930px;
+    height:235px;
+    background-color: gray;
+    float:left;
+    margin:0 25px 10px 25px;
+    
+}
+.bot-content-img1,.bot-content-img2{
+    width:240px;
+    height:235px;
+    float: left;
+    
+}
+.bot-text-content{
+    width:450px;
+    height:235px;
+    text-align: justify;
+    float: left;
+    background-color: rgb(111, 132, 71);
+    overflow: scroll;
+
+}
+/*content section end*/
+.footer{
+    width:inherit;
+    height:50px;
+    background-color: rgb(152, 183, 94);
+    line-height:50px;
+    text-align: center;
+    font-weight: bold;
+    float: left;
+}
+@media screen and (min-width:320px) and (max-width:992px) {
+   .wrapper,.nav,.content,.footer,.top-content,.bot-content,.top-content-img1,.top-content-img2,.bot-content-img1,.bot-content-img2,.bot-content-text,.header,.top-content-img1 img,.top-content-img2 img{
+        max-width: 100%;
+        height:auto;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+    .logo{
+        width:25%;
+
+    }
+    .bot-content-text{
+        width:100%;
+       
+    }
+    .header,.companyname{
+        height:100px;
+    }
+    .companyname{
+
+        width:75%;
+    }
+    .logo,.cname,.caption,.top-content,.bot-content{
+        margin: 0;
+    }
+    .cname,.caption{
+        font-size:30px;
+        width:inherit;
+    }
+    .nav a{
+        padding:0;
+        background-color: transparent;
+    }
+    .nav li{
+        display: block;
+        border-bottom: 1px solid gray;
+        text-align: center;
+    }
+}
+@media screen and (min-width:576px) and (max-width:756px) {
+    .logo{
+        width:15%;
+
+    }
+    .companyname{
+        width:85%
+    }
+}
+@media screen and (min-width:756px) and (max-width:992px) {
+    .logo{
+        width:10%;
+
+    }
+    .companyname{
+        width:90%
+    }
+}
